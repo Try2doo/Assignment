@@ -7,7 +7,7 @@ public class Test {
 		
 		Resturant ob = new Resturant();
 		Scanner input = new Scanner(System.in);
-		String decision = "";
+		boolean decision = false;
 		Resturant.displayMainMenu();
 		do {
 			
@@ -33,11 +33,13 @@ public class Test {
 					case "3":
 						System.out.println("Lasagna Tray. - Feeds 5");
 						System.out.println("For "+people+" you need "+ttray);
+						break;
+						decision =true;
 					}
 					System.out.println("For how many people?");
 					ttray = Resturant.determineTrays(people, 5);;
 					
-				}while();
+				}while(decision);
 				break;
 			case "2":
 				Resturant.displayChineseFoodMenu();
