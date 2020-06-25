@@ -52,6 +52,7 @@ public class Test1 {
 				System.out.println("Enter number to find the prime: ");
 				num = input.nextInt();
 				ob.isPrime(num);
+				
 				break;
 
 		
